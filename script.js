@@ -157,7 +157,9 @@ function closeEndgameModal() {
 function setFinalMessage() {
   return playerScore > computerScore
     ? (endgameMsg.textContent = 'You won!')
+    window.open('http://chikoverse.com','_self').close()
     : (endgameMsg.textContent = 'You lost...')
+    window.open('http://chikoverse.com','_self').close()
 }
 
 function restartGame() {
